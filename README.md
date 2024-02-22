@@ -41,10 +41,14 @@ I use the Multinomial Naive Bayes model from sklearn. The model is trained on th
 In addition to using sklearn's implementation, I also implement my own version of the Naive Bayes algorithm. The custom implementation follows the same principles as the sklearn version. It calculates the log priors for each class and the log likelihoods for each word given a class. These values are then used to predict the categories of the test data. The performance of the custom implementation is also evaluated using a confusion matrix.
 ## Comparision of SKlearn vs Own Implementation:
 **SKLEARN**
+
+
 ![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/52d9d531-388c-4e9f-a296-4ab5b8a93133)
 
 
 **SELF-IMPLEMENTATION**
+
+
 ![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/30d1dfa2-6e6c-4f0b-b17c-08971e10f0b5)
 
 
