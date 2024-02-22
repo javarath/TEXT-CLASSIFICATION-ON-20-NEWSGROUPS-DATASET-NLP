@@ -41,61 +41,12 @@ I use the Multinomial Naive Bayes model from sklearn. The model is trained on th
 In addition to using sklearn's implementation, I also implement my own version of the Naive Bayes algorithm. The custom implementation follows the same principles as the sklearn version. It calculates the log priors for each class and the log likelihoods for each word given a class. These values are then used to predict the categories of the test data. The performance of the custom implementation is also evaluated using a confusion matrix.
 ## Comparision of SKlearn vs Own Implementation:
 **SKLEARN**
-Class   Precision   Recall   F1-Score   Support
-------------------------------------------------
-0       0.33        0.60     0.43       199
-1       0.51        0.50     0.50       242
-2       0.19        0.02     0.03       263
-3       0.47        0.55     0.50       262
-4       0.50        0.54     0.52       234
-5       0.63        0.60     0.62       230
-6       0.60        0.62     0.61       257
-7       0.56        0.56     0.56       265
-8       0.51        0.65     0.57       251
-9       0.35        0.66     0.46       226
-10      0.45        0.22     0.29       262
-11      0.61        0.59     0.60       257
-12      0.44        0.49     0.46       229
-13      0.71        0.56     0.63       249
-14      0.72        0.47     0.57       256
-15      0.62        0.65     0.63       243
-16      0.57        0.62     0.59       234
-17      0.80        0.65     0.71       224
-18      0.39        0.40     0.39       197
-19      0.27        0.33     0.30       132
-------------------------------------------------
-Accuracy: 0.51
-Macro Avg: 0.51
-Weighted Avg: 0.52
+![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/52d9d531-388c-4e9f-a296-4ab5b8a93133)
 
 
 **SELF-IMPLEMENTATION**
-Class   Precision   Recall   F1-Score   Support
-------------------------------------------------
-0       0.33        0.60     0.43       199
-1       0.51        0.50     0.50       242
-2       0.19        0.02     0.03       263
-3       0.47        0.55     0.50       262
-4       0.50        0.54     0.52       234
-5       0.63        0.60     0.62       230
-6       0.60        0.62     0.61       257
-7       0.56        0.56     0.56       265
-8       0.51        0.65     0.57       251
-9       0.35        0.66     0.46       226
-10      0.45        0.22     0.29       262
-11      0.61        0.59     0.60       257
-12      0.44        0.49     0.46       229
-13      0.71        0.56     0.63       249
-14      0.72        0.47     0.57       256
-15      0.62        0.65     0.63       243
-16      0.57        0.62     0.59       234
-17      0.80        0.65     0.71       224
-18      0.39        0.40     0.39       197
-19      0.27        0.33     0.30       132
-------------------------------------------------
-Accuracy: 0.51
-Macro Avg: 0.51
-Weighted Avg: 0.52
+![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/30d1dfa2-6e6c-4f0b-b17c-08971e10f0b5)
+
 
 
 ## License
