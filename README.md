@@ -20,6 +20,9 @@ The project requires the following Python libraries:
 - nltk
 
 ## Dataset Description
+![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/be1b7a46-b753-4373-91a9-7e463840dd81)
+![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/3361d329-5143-44b1-bf16-519f9d2ec8fc)
+
 The 20 Newsgroups dataset is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups. The data is organized into 20 different newsgroups, each corresponding to a different topic. Some of the newsgroups are very closely related to each other (e.g. comp.sys.ibm.pc.hardware, comp.sys.mac.hardware), while others are highly unrelated (e.g misc.forsale, soc.religion.christian).
 
 ## Data Preprocessing
@@ -49,30 +52,14 @@ Overall, lemmatization plays a crucial role in natural language processing tasks
 ### Term Frequency (TF):
 Term Frequency measures how often a term occurs in a document. It is calculated by dividing the number of occurrences of a term in a document by the total number of terms in the document.
 
-Mathematically, TF is calculated as follows for a term \( t \) in a document \( d \):
-
-\[
-TF(t, d) = \frac{\text{Number of occurrences of term } t \text{ in document } d}{\text{Total number of terms in document } d}
-\]
-
 ### Inverse Document Frequency (IDF):
 Inverse Document Frequency measures how important a term is across multiple documents in a corpus. It is calculated by taking the logarithm of the ratio of the total number of documents in the corpus to the number of documents containing the term, and then adding 1 to avoid division by zero for terms that appear in all documents.
 
-Mathematically, IDF is calculated as follows for a term \( t \) in a corpus:
-
-\[
-IDF(t) = \log{\left(\frac{\text{Total number of documents in the corpus}}{\text{Number of documents containing term } t} + 1\right)}
-\]
 
 ### TF-IDF:
 TF-IDF is the product of Term Frequency and Inverse Document Frequency. It gives a higher weight to terms that are frequent in a document but rare across the corpus. This helps in identifying important terms in a document.
 
-Mathematically, TF-IDF is calculated as follows for a term \( t \) in a document \( d \):
-
-\[
-TF-IDF(t, d) = TF(t, d) \times IDF(t)
-\]
-
+M
 ## Model Training and Evaluation
 The Multinomial Naive Bayes model from sklearn is used for training. The model is trained on the TF-IDF transformed training data and then used to predict the categories of the TF-IDF transformed test data. The performance of the model is evaluated using a confusion matrix.
 ![image](https://github.com/javarath/TEXT-CLASSIFICATION-OWN-IMPLEMENTATION-VS-SKLEARN-IMPLEMENTATION-/assets/102171533/11cd9411-8f18-4eb2-92c4-5c4502166470)
